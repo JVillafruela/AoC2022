@@ -1,4 +1,4 @@
-package main
+package day01
 
 import (
 	"aoc2022/utils"
@@ -6,7 +6,7 @@ import (
 	"strconv"
 )
 
-func day01part1(filename string) {
+func Part1(filename string) {
 	lines := utils.ReadLines(filename)
 
 	maxCalories := 0
@@ -36,7 +36,7 @@ func day01part1(filename string) {
 	println("Day 01 part1", maxElve, maxCalories)
 }
 
-func day01part2(filename string) {
+func Part2(filename string) {
 	lines := utils.ReadLines(filename)
 	linesCount := len(lines)
 	calories := make([]int, 0, linesCount) // indexed by elve#

@@ -1,11 +1,11 @@
-package main
+package day02
 
 import (
 	"aoc2022/utils"
 	"fmt"
 )
 
-func day02part1(filename string) {
+func Part1(filename string) {
 	lines := utils.ReadLines(filename)
 
 	score := 0
@@ -49,7 +49,7 @@ func outcome1(a, b rune) int {
 	return y
 }
 
-func day02part2(filename string) {
+func Part2(filename string) {
 	lines := utils.ReadLines(filename)
 
 	score := 0

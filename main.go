@@ -1,9 +1,16 @@
 package main
 
-func main() {
-	//day01part1("data01/input.txt")
-	//day01part2("data01/input.txt")
+import (
+	"aoc2022/day01"
+	"aoc2022/day02"
+)
 
-	day02part1("data02/input.txt")
-	day02part2("data02/input.txt")
+func main() {
+	day01.Part1("day01/input.txt")
+	day01.Part2("day01/input.txt")
+
+	day02.Part1("day02/input.txt")
+	day02.Part2("day02/input.txt")
+
+	//day03.Part1("day02/input.txt")
 }
