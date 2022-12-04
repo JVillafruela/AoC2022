@@ -1,7 +1,7 @@
 package main
 
 import (
-	"aoc2022/day03"
+	"aoc2022/day04"
 )
 
 func main() {
@@ -11,6 +11,9 @@ func main() {
 	//day02.Part1("day02/input.txt")
 	//day02.Part2("day02/input.txt")
 
-	day03.Part1("day03/input.txt")
-	day03.Part2("day03/input.txt")
+	//day03.Part1("day03/input.txt")
+	//day03.Part2("day03/input.txt")
+
+	day04.Part1("day04/input.txt")
+	day04.Part2("day04/input.txt")
 }
