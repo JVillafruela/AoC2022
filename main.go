@@ -12,4 +12,5 @@ func main() {
 	//day02.Part2("day02/input.txt")
 
 	day03.Part1("day03/input.txt")
+	day03.Part2("day03/input.txt")
 }

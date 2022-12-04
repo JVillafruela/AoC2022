@@ -23,6 +23,29 @@ func Part1(filename string) {
 	println("Day 03 part1", total)
 }
 
+func Part2(filename string) {
+	var bp [3]backpack
+	lines := utils.ReadLines(filename)
+	total := 0
+
+	for l, line := range lines {
+		j := l % 3
+		bp[j] = countItems(line)
+		if j == 2 {
+			for i, k := range bp[0] {
+				if (k == 1) && (bp[1][i] == 1) && (bp[2][i] == 1) {
+					priority := i + 1
+					total += priority
+					//fmt.Printf("priority %d %d %c\n", i, priority, positionASCII(i))
+					break
+				}
+			}
+
+		}
+	}
+	println("Day 03 part2", total)
+}
+
 func processLine(line string) int {
 	k := len(line) / 2
 	part1 := line[0:k]
@@ -48,7 +71,6 @@ func countItems(str string) backpack {
 		i := index(c)
 		bp[i] = 1
 	}
-	//fmt.Printf("str %s\nbp %v \n", str, bp)
 	return bp
 }
 
